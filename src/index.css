@@ -6,11 +6,11 @@
   --dark-accent: #373f51;
 }
 
-.main-color{
+.main-color {
   color: var(--main-color);
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -52,12 +52,12 @@ body {
 
 .header-button {
   border: 2px solid white;
-  /* border-bottom: 2px solid var(--main-color); */
+  border-bottom: 2px solid var(--main-color);
   padding: 5px 10px;
   margin: 5px;
   padding-bottom: 2px;
   cursor: pointer;
-  /* color: var(--main-color); */
+  color: var(--dark-accent);
   background-color: white;
   font-size: large;
   transition: 0.2s;
@@ -368,7 +368,7 @@ body {
   padding: 15px;
 }
 
-.big-grid-p{
+.big-grid-p {
   padding: 15px;
   line-height: 46px;
 }
@@ -636,7 +636,7 @@ footer {
   margin-right: 80px;
 }
 
-.footer-number{
+.footer-number {
   font-size: 36px;
   margin: 0;
   padding: 0;
@@ -644,14 +644,14 @@ footer {
   color: var(--main-color);
 }
 
-.footer-address{
+.footer-address {
   font-weight: bold;
   font-size: 22px;
   padding: 5px;
   margin: 0;
 }
 
-.footer-2{
+.footer-2 {
   margin-top: 30px;
   width: 100%;
   justify-content: center;
@@ -661,10 +661,9 @@ footer {
   font-weight: bold;
 }
 
-
 /* gallery */
 
-.gallery{
+.gallery {
   width: 100%;
   margin-bottom: 80px;
   display: flex;
@@ -673,7 +672,7 @@ footer {
   align-items: center;
 }
 
-.gallery-title{
+.gallery-title {
   width: 100%;
   font-size: 50px;
   margin: 0;
@@ -683,40 +682,40 @@ footer {
   color: var(--main-color);
 }
 
-.gallery > div{
+.gallery > div {
   background-color: var(--dark-accent) !important;
   min-height: fit-content !important;
 }
 
-.gallery > div > div:nth-child(1){
+.gallery > div > div:nth-child(1) {
   max-width: 100% !important;
 }
 
-figcaption{
+figcaption {
   background-color: var(--main-color) !important;
 }
 
-.gallery > figcaption{
+.gallery > figcaption {
   background: var(--main-color) !important;
 }
 
-.gallery > div > div > div > figure > div > img{
+.gallery > div > div > div > figure > div > img {
   opacity: 1 !important;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-.gallery > div > div > div > figure > div > img:hover{
-  transition: .2s;
-  opacity: .5 !important;
+.gallery > div > div > div > figure > div > img:hover {
+  transition: 0.2s;
+  opacity: 0.5 !important;
 }
 
 /* contact form */
 
-.form-outcome{
+.form-outcome {
   color: var(--background-color);
 }
 
-.contact-form{
+.contact-form {
   background-color: var(--dark-accent);
   width: 100%;
   display: flex;
@@ -726,7 +725,7 @@ figcaption{
   padding: 0 50px 50px 50px;
 }
 
-.input-container > input{
+.input-container > input {
   color: var(--main-color);
   font-size: 24px;
   padding: 10px 15px;
@@ -737,7 +736,7 @@ figcaption{
   background-color: var(--dark-accent);
 }
 
-.input-container > textarea{
+.input-container > textarea {
   color: var(--main-color);
   font-size: 24px;
   padding: 10px 15px;
@@ -749,31 +748,31 @@ figcaption{
   width: 325px;
 }
 
-.input-container > textarea::placeholder{
+.input-container > textarea::placeholder {
   color: var(--background-color);
 }
 
-.input-container > textarea:active{
+.input-container > textarea:active {
   outline-color: var(--main-color);
 }
 
-.input-container > textarea:focus{
+.input-container > textarea:focus {
   outline-color: var(--main-color);
 }
 
-.input-container > input::placeholder{
+.input-container > input::placeholder {
   color: var(--background-color);
 }
 
-.input-container > input:active{
+.input-container > input:active {
   outline-color: var(--main-color);
 }
 
-.input-container > input:focus{
+.input-container > input:focus {
   outline-color: var(--main-color);
 }
 
-.submit{
+.submit {
   margin-top: 20px;
   color: var(--background-color);
   border: 2px solid var(--background-color);
@@ -784,12 +783,278 @@ figcaption{
   transition: 0.2s;
   cursor: pointer;
   background-color: var(--dark-accent);
-  transition: .2s;
+  transition: 0.2s;
   min-width: 320px;
 }
 
-.submit:hover{
+.submit:hover {
   transition: 0.2s;
   background-color: var(--background-color);
   color: var(--dark-accent);
+}
+
+/* media Query */
+
+@media only screen and (max-width: 1300px) {
+  .second-section-video {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  .section-subsection {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .section-big {
+    font-size: 4em;
+  }
+
+  .big-grid-p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .third-section-title {
+    text-align: center;
+  }
+  .third-section-p {
+    text-align: center;
+  }
+
+  .WorkSection {
+    height: fit-content;
+  }
+
+  .howto-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    margin: 20px 0;
+  }
+
+  .howto-section {
+    width: 100%;
+    height: 300px;
+  }
+
+  .howto-background1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+  }
+
+  .howto-background2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+  }
+
+  .howto-background-three {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 35%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-section {
+    margin-top: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-half {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .section-half:nth-child(2) {
+    padding-bottom: 30px;
+  }
+
+  .second-section {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+
+  .left-half {
+    width: 100%;
+  }
+
+  .p-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .second-section-p {
+    text-align: center;
+  }
+
+  .second-section-half {
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .second-section-video {
+    margin-top: 50px;
+    width: fit-content;
+    height: 300px;
+    width: 100%;
+  }
+
+  .third-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+  }
+
+  .third-section-left-half {
+    width: fit-content;
+    margin-bottom: 50px;
+  }
+
+  .third-section-right-half {
+    width: fit-content;
+  }
+
+  .grid-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-left-section {
+    width: fit-content;
+    /* padding: 15px; */
+  }
+
+  .grid-right-section {
+    width: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small-right-grid {
+    display: none;
+  }
+
+  .big-grid {
+    width: fit-content;
+  }
+
+  .WorkSection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-left {
+    width: fit-content;
+  }
+
+  .work-left-image {
+    width: 100%;
+  }
+
+  .work-left-container {
+    position: initial;
+    margin: 25px auto;
+  }
+
+  .work-right {
+    width: fit-content;
+  }
+
+  .work-right > h4 {
+    text-align: center;
+  }
+
+  .work-right > p {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .header > nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header > nav > a {
+    margin: 10px;
+  }
+
+  .header-button{
+    font-size: 18px;
+  }
+
+  .first-section {
+    height: fit-content;
+    margin-top: 50px;
+  }
+
+  .section-big {
+    font-size: 3.5em;
+  }
+
+  .section-subsection {
+    position: initial;
+    width: 100%;
+  }
+
+  .section-estimate-button {
+    width: 80%;
+  }
+
+  .second-section-half {
+    margin-top: 0;
+  }
+
+  .p-title {
+    font-size: 24px;
+  }
+
+  .second-section-p {
+    font-size: 18px;
+  }
+
+  .work-right > p {
+    font-size: 18px;
+  }
+
+  .gallery-title {
+    font-size: 32px;
+    padding: 15px;
+  }
+
+  .calltoaction > h1 {
+    font-size: 32px;
+  }
+
+  .footer-1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-1 > img {
+    margin-right: 0;
+  }
 }
