@@ -25,7 +25,7 @@ export const SecondSection = () => {
             height="500"
             muted
             autoPlay={"autoplay"}
-            preLoad="auto"
+            preload="auto"
             loop
           ></video>
         </section>
