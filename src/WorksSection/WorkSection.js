@@ -27,7 +27,7 @@ export const WorkSection = () => {
           the things that really important. By offering a worry-free guarantee
           for your living space, we take care of you. We want to make sure you
           feel safe and comfortable since we are sure of the work we accomplish.
-          After our cleaning service in Pueblo, if you are not happy with the
+          After our cleaning service in Denver, if you are not happy with the
           results, just let us know within 24 hours and we will come back to
           make it right.
         </p>
